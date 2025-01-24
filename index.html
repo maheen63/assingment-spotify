@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            flex: 1;
+        }
+        footer {
+            text-align: center;
+            padding: 0%;
+            background: #418841;
+            color: #0c0c0c;
+            font-weight: bold;
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo-container">
+                <img src="logo.svg" alt="Spotify Logo" class="logo">
+                <h1>Spotify</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#" onclick="showPage('search')">Search</a></li>
+                    <li><a href="#" onclick="showPage('library')">Your Library</a></li>
+                </ul>
+            </nav>
+            <div class="playlist">
+                <h2>Playlists</h2>
+                <ul>
+                    <li><a href="#">Discover Weekly</a></li>
+                    <li><a href="#">Release Radar</a></li>
+                    <li><a href="#">Daily Mix 1</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h1>Welcome to Spotify</h1>
+            </header>
+            <section id="home" class="content page fade-in">
+                <div class="section">
+                    <h2>Featured Playlists</h2>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="src/arjit1.jpeg" alt="Playlist 1">
+                            <div class="card-info">
+                                <h3>Playlist 1</h3>
+                                <p>By Spotify</p>
+                                <button class="like-button">&#9829;</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="src/agr.jpg" alt="Playlist 2">
+                            <div class="card-info">
+                                <h3>Playlist 2</h3>
+                                <p>By Spotify</p>
+                                <button class="like-button">&#9829;</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="src/we meet.jpg" alt="Playlist 3">
+                            <div class="card-info">
+                                <h3>Playlist 3</h3>
+                                <p>By Spotify</p>
+                                <button class="like-button">&#9829;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>Recently Played</h2>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="src/sir.jpg" alt="Track 1">
+                            <div class="card-info">
+                                <h3>Track 1</h3>
+                                <p>Artist 1</p>
+                                <button class="like-button">&#9829;</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="src/bts.jpg" alt="Track 2">
+                            <div class="card-info">
+                                <h3>Track 2</h3>
+                                <p>Artist 2</p>
+                                <button class="like-button">&#9829;</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="src/ost.jpeg" alt="Track 3">
+                            <div class="card-info">
+                                <h3>Track 3</h3>
+                                <p>Artist 3</p>
+                                <button class="like-button">&#9829;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>Popular Artists</h2>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="src/rahat ali khan.jpg" alt="Artist 1">
+                            <div class="card-info">
+                                <h3>Artist 1</h3>
+                                <button class="like-button">&#9829;</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="src/apt.jpeg" alt="Artist 2">
+                            <div class="card-info">
+                                <h3>Artist 2</h3>
+                                <button class="like-button">&#9829;</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="src/jhol.jpeg" alt="Artist 3">
+                            <div class="card-info">
+                                <h3>Artist 3</h3>
+                                <button class="like-button">&#9829;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>Podcasts</h2>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="src/japani maal.jpg" alt="Podcast 1">
+                            <div class="card-info">
+                                <h3>Podcast 1</h3>
+                                <p>By Host 1</p>
+                                <button class="like-button">&#9829;</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="src/maxresdefault.jpg" alt="Podcast 2">
+                            <div class="card-info">
+                                <h3>Podcast 2</h3>
+                                <p>By Host 2</p>
+                                <button class="like-button">&#9829;</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="src/cars.png" alt="Podcast 3">
+                            <div class="card-info">
+                                <h3>Podcast 3</h3>
+                                <p>By Host 3</p>
+                                <button class="like-button">&#9829;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="search" class="content page fade-in" style="display: none;">
+                <h2>Search</h2>
+                <input type="text" placeholder="Search for songs, artists, albums..." class="search-bar" oninput="searchContent(this.value)">
+                <div id="search-results" class="cards">
+                    <!-- Search results will be displayed here -->
+                    <div class="card">
+                        <img src="src/badi.jpeg" alt="Search Playlist 1">
+                        <div class="card-info">
+                            <h3>Search Playlist 1</h3>
+                            <p>By Spotify</p>
+                            <button class="like-button">&#9829;</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="src/images.jpeg" alt="Search Playlist 2">
+                        <div class="card-info">
+                            <h3>Search Playlist 2</h3>
+                            <p>By Spotify</p>
+                            <button class="like-button">&#9829;</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="library" class="content page fade-in" style="display: none;">
+                <h2>Your Library</h2>
+                <div class="section">
+                    <h3>Playlists</h3>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="src/honey.jpeg" alt="Library Playlist 1">
+                            <div class="card-info">
+                                <h3>Library Playlist 1</h3>
+                                <p>By You</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="src/kk.jpeg" alt="Library Playlist 2">
+                            <div class="card-info">
+                                <h3>Library Playlist 2</h3>
+                                <p>By You</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h3>Liked Songs</h3>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="src/agr.jpg" alt="Liked Song 1">
+                            <div class="card-info">
+                                <h3>Liked Song 1</h3>
+                                <p>Artist 1</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="src/cars.png" alt="Liked Song 2">
+                            <div class="card-info">
+                                <h3>Liked Song 2</h3>
+                                <p>Artist 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Spotify</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
